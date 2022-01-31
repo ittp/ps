@@ -1,0 +1,9 @@
+Lhost=""
+Lport=""
+
+Rhost=""
+Rport=""
+
+
+netsh interface portproxy add v4tov4 listenaddress=$Lhost listenport=$Lport connectaddress=$Rhost connectport=$Rport
+netsh interface portproxy show all
